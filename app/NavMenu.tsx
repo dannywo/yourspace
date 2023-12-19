@@ -6,9 +6,9 @@ export default function NavMenu() {
     return (
         // <nav className={styles.nav}>
         <nav className={`bg-white border-gray-200 dark:bg-gray-900`}>
-            <div className='<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-                <Link href={"/"}>
-                    <Image src="next.svg"
+            <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+                <Link href={'/'}>
+                    <Image src='next.svg'
                         alt='NextSpace Logo'
                         width={216}
                         height={30}
