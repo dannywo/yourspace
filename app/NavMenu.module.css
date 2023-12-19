@@ -6,3 +6,17 @@
     justify-content: space-between;
     align-items: center;
 } */
+
+.nav {
+    display: block;
+}
+
+.filterGreen {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+        brightness(118%) contrast(119%);
+}
+
+.filterWhite {
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(282deg)
+        brightness(104%) contrast(101%);
+}
