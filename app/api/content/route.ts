@@ -8,6 +8,12 @@ const posts = [
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.',
   },
+  {
+    title: 'Where is Waldito?',
+    slug: 'waldo',
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.',
+  },
 ];
 
 export async function GET() {
