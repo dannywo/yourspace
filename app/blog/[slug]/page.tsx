@@ -31,7 +31,6 @@ export default async function BlogPostPage({ params }: Props) {
     return (
         <div>
             <h1>{post.title} </h1>
-            {/* pa jay jay */}
             <p> {post.content} </p>
         </div>
     )
