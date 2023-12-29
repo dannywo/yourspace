@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './NavMenu.module.css'
+import { SignInButton, SignOutButton } from '@/components/buttons'
 
 export default function NavMenu() {
     return (
@@ -32,6 +33,12 @@ export default function NavMenu() {
                         </li>
                         <li className='block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent'>
                             <Link href={'/users'}>Users</Link>
+                        </li>
+                        <li className='block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent'>
+                            <SignInButton />
+                        </li>
+                        <li className='block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent'>
+                            <SignOutButton />
                         </li>
                     </ul>
                 </div>
