@@ -1,5 +1,6 @@
 'use client';
 
+import { stat } from 'fs';
 import { useSession, signIn, signOut } from 'next-auth/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -19,7 +20,7 @@ export function SignInButton() {
                     src={session.user?.image ?? '/mememan.webp'}
                     width={32}
                     height={32}
-                    alt="Your Name"
+                    alt="User avatar"
                 />
             </Link>
         );
@@ -29,5 +30,12 @@ export function SignInButton() {
 }
 
 export function SignOutButton() {
-    return <button onClick={() => signOut()}>Sign out</button>;
+    const { data: session, status } = useSession();
+
+    if (status === 'loading') {
+        return <>...</>;
+    }
+
+    if (status === 'authenticated')
+        return <button onClick={() => signOut()}>Sign out</button>;
 }
