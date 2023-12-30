@@ -7,9 +7,9 @@ export default async function Home() {
 
   console.log('Current session in home: ', session);
 
-  if (!session) {
-    redirect('/api/auth/signin');
-  }
+  // if (!session) {
+  //   redirect('/api/auth/signin');
+  // }
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
