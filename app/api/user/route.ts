@@ -16,10 +16,12 @@ export async function PUT(request: Request) {
     const data = await request.json();
     data.age = Number(data.age);
 
-    const user = prisma.user.update({
+    const user = await prisma.user.update({
         where: {
             email: currentUserEmail,
         },
         data,
     });
+
+    return NextResponse.json(user);
 }
