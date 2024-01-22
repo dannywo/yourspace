@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './UserCard.module.css';
+import FollowButton from '../FollowButton/FollowButton';
 
 interface Props {
     id: string;
@@ -22,6 +23,7 @@ export default function UserCard({ id, name, age, image }: Props) {
                 </h3>
                 <p>Age: {age}</p>
             </div>
+            <FollowButton targetUserId={id}></FollowButton>
         </div>
     );
 }
